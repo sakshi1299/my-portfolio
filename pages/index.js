@@ -1,11 +1,14 @@
 import React , {useState , useEffect} from 'react';
 import Head from 'next/head'
-import Path from '../components/path';
+import {Path , NavBar , Node , About} from '../components';
 import styles from "../styles/Home.module.css";
-import NavBar from "../components/navBar";
-import { Inter } from '@next/font/google'
+import { Inter , Roboto_Mono } from '@next/font/google'
 import {Container , Button } from '@mui/material';
+
+
 const inter = Inter()
+const robotoMono = Roboto_Mono();
+
 export default function Home() {
   return (
     <Container>
@@ -44,6 +47,21 @@ export default function Home() {
 
           <Button variant="outlined" className={styles.button}> download my resume</Button>
            
+          {/* path above about section */}
+          <div className={styles.pathAboveNavBar}>
+              <Path  direction={"vertical"} height={"65px"} width={"0px"}></Path>
+              <Node border={false}/>
+              <Path  direction={"vertical"} height={"65px"} width={"0px"}></Path>
+              <Node border={true}/>
+          </div>
+          {/* path above about section */}
+
+          {/* About section */}
+          <section id="About" className={styles.aboutSection}>
+              <h3 className={`${styles.sectionHeading}  ${robotoMono.className}`}>About</h3>
+              <About/>
+          </section>
+          {/* About section */}
       </div>
       </Container>
   )

@@ -1,0 +1,19 @@
+.node{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #8B8B8B;
+    margin: 4px 0px 4px 1px;
+    margin-left: 1px;
+    display: inline-block;
+}
+.nodeBorder{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #8B8B8B;
+    margin: 9px 0px 4px 1px;
+    display: inline-block;
+    outline-offset: 3px;
+    outline: 2px solid #C4C4C4;
+}
