@@ -7,7 +7,7 @@ const inter = Inter();
 const robotoMono = Roboto_Mono();
 
 
-export default function about(){
+export default function About(){
     const [company , setCompany] = useState(0);
     return(
         <div className={styles.main}>
