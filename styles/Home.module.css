@@ -1,5 +1,11 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .pathAboveNavBar{
-  width: 100vw;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,4 +59,20 @@ margin-bottom: 0px;
   font-size: 20px;
   letter-spacing: 1.5px;
   margin-top: 8px;
+}
+
+.aboutMe{
+  color: #A9A9A9;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  width: 40%;
+}
+
+.button{
+  color: white;
+  border: 1px solid white !important;
+  margin-top: 28px;
+  text-transform: capitalize;
+  padding: 10px 18px;
 }
