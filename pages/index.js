@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import { Path, NavBar, Node, About,CustButton, Work } from '../components';
+import { Path, NavBar, Node, About, CustButton, Work } from '../components';
 import styles from "../styles/Home.module.css";
 import { Inter, Roboto_Mono } from '@next/font/google'
 import { Container, Button } from '@mui/material';
@@ -11,10 +11,9 @@ const robotoMono = Roboto_Mono();
 
 export default function Home() {
 
-  const [currProject , setCurrProject] = useState(0);
+  const [currProject, setCurrProject] = useState(0);
 
-  function handleChange(value)
-  {
+  function handleChange(value) {
     setCurrProject(value)
   }
   return (
@@ -85,18 +84,18 @@ export default function Home() {
 
         {/* Work Section */}
         <section id="About" className={styles.workSection}>
-            <div className={styles.buttons}>
+          <div className={styles.buttons}>
             <h3 className={`${styles.sectionHeadingLeft}  ${robotoMono.className} `}>Work</h3>
-          {
-            work.map((project , i)=>{
-              return(
-                <CustButton  project = {project} index={i} handleChange={handleChange} currProject={currProject}/>
-              )
-            })
-          }
+            {
+              work.map((project, i) => {
+                return (
+                  <CustButton key={i} project={project} index={i} handleChange={handleChange} currProject={currProject} />
+                )
+              })
+            }
           </div>
           <Work index={currProject} />
-         
+
         </section>
         {/* Work Section */}
       </div>
