@@ -1,15 +1,15 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import styles from "../styles/about.module.css";
 import data from "../utils/about.json";
-import { Inter , Roboto_Mono } from '@next/font/google'
+import { Inter, Roboto_Mono } from '@next/font/google'
 
 const inter = Inter();
 const robotoMono = Roboto_Mono();
 
 
-export default function About(){
-    const [company , setCompany] = useState(0);
-    return(
+export default function About() {
+    const [company, setCompany] = useState(0);
+    return (
         <div className={styles.main}>
             <div className={styles.titleBar}>
                 <span className={styles.red}></span>
@@ -18,15 +18,15 @@ export default function About(){
             </div>
             <div className={styles.content}>
                 <div className={styles.contentTitle}>
-                <div className={styles.emptySpace}></div>
+                    <div className={styles.emptySpace}></div>
                     {
-                       
-                        data.map((job , i)=>{
-                            return(
-                                <div 
-                                    key={i} 
+
+                        data.map((job, i) => {
+                            return (
+                                <div
+                                    key={i}
                                     className={`${styles.companyName}  ${inter.className} ${company == i && styles.active}`}
-                                    onClick={(e)=>setCompany(i)}
+                                    onClick={(e) => setCompany(i)}
                                 >
                                     {job.companyName}
                                 </div>
@@ -54,7 +54,7 @@ export default function About(){
                     </p>
                 </div>
             </div>
-            
+
         </div>
     )
 }

@@ -1,0 +1,71 @@
+.titleBar{
+    width: 100%;
+    border: 1px solid #848484;
+    border-radius: 8px;
+    padding: 8px;
+    text-transform: lowercase;
+    color: #9B74FB;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main{
+    width: 75%;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: 100%;
+    margin-top: 18px;
+}
+.projectDetails{
+    border: 1px solid #848484;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+    border-radius: 8px;
+    padding: 10px 16px;
+    gap: 26px;
+
+}
+.projectimage{
+    border: 1px solid #848484;
+    width: 60%;
+    border-radius: 8px;
+}
+.projectTitle{
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.projectDesc{
+    color: #A9A9A9;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.git{
+    color: #9B74FB;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.git :hover{
+    text-decoration: underline;
+    text-decoration-color: #9B74FB;
+}

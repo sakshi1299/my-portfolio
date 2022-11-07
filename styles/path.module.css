@@ -1,10 +1,10 @@
-.horizontal{
+.horizontal {
     width: 100%;
     border-top: 2px solid #848484;
-    display: inline-block;
+    display: block;
 }
 
-.vertical{
+.vertical {
     height: 100%;
     border-right: 2px solid #848484;
     display: inline-block;
