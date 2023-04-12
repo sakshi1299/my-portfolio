@@ -99,6 +99,16 @@ margin-bottom: 0px;
   align-items: center;
   gap: 6px;
 }
+
+.horizontalFullPath{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10%;
+}
 .pathBelowAbout{
   width: 80%;
   display: flex;
@@ -107,10 +117,10 @@ margin-bottom: 0px;
 }
 .workSection{
   width: 100%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   display: flex;
   flex-direction: row;
-  gap: 16%;
+  gap: 8%;
 }
 .sectionHeadingLeft{
   color: #9B74FB;
@@ -130,4 +140,19 @@ margin-bottom: 0px;
   flex-direction: column;
   gap: 14px;
   width: 20%;
+  align-items: center;
+}
+
+.pathBelowWork{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.vertPathAlignment{
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

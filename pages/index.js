@@ -17,6 +17,8 @@ export default function Home() {
     setCurrProject(value)
   }
   return (
+    // https://sres.web.boeing.com/artifactory/api/npm/npm-releases/
+
     <Container>
       <Head>
         <title>Sakshi Kshatriya</title>
@@ -93,11 +95,35 @@ export default function Home() {
                 )
               })
             }
+              <div className={styles.pathAboveNavBar}>
+                <Path direction={"vertical"} height={"100px"} width={"0px"}></Path>
+                <Node border={false} />
+                <Path direction={"vertical"} height={"105px"} width={"0px"}></Path>
+              </div>
           </div>
           <Work index={currProject} />
-
         </section>
         {/* Work Section */}
+
+        {/* Path above blogs section */}
+        <div className={styles.pathBelowWork}>
+          <div className={styles.horizontalFullPath}>
+            <Path  direction={"horizontal"} height={"0px"} width={"30%"}></Path>
+            <Node border={false} />
+            <Path  direction={"horizontal"} height={"0px"} width={"50%"}></Path>
+          </div>
+          <div className={styles.vertPathAlignment}>
+            <Path  direction={"vertical"} height={"105px"} width={"0px"}></Path>
+            <Node border={true} />
+            <h3 className={`${styles.sectionHeading}  ${robotoMono.className} `}>Blogs</h3>
+            <Path  direction={"vertical"} height={"215px"} width={"0px"}></Path>
+            <Node border={false} />
+            <Path  direction={"vertical"} height={"215px"} width={"0px"}></Path>
+          </div>
+          
+        </div>
+       
+        {/* Path above blogs section */}
       </div>
     </Container>
   )
