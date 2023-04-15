@@ -1,18 +1,18 @@
 [
     
     {
-        "title": "Project One",
+        "title": "Distinguished Society",
         "url" : "https://thedistinguishedsociety.com",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "description" : "E-commerce website for a clothing brand.Implemented features like payment gateway, email scheduler, email notifications, otp login , goggle authentication. Implemented guest login and multi-currency conversion. Integrated Shiprocket api for shipment support and order tracking.Deployed the application on AWS EC2 .Tech stack - Next.js, Node.js , MonogoDb, AWS EC2.",
         "image" : "",
         "git" : ""
     }
     ,
     {
-        "title": "Project Two",
-        "url" : "https://thedistinguishedsociety.com",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "image" : "",
+        "title": "Tyke",
+        "url" : "https://tykeinvest.com",
+        "description" : "Freelance project for Tyke. Tyke is a start-up investment platform. Worked on features like - Bank account verification, Official document verification , E-sign for kyc using digio. Integrated services like Google Analytics, Segment, Payment Gateway, Twiliio and Sendgrid. Implemented goggle and facebook authenetication.Delivered performance-driven and user-centric websites that met all business requirements. Tech Stack - React.js , Node.js , MonogoDb, AWS EC2.",
+        "image" : "../assets/tyke.png",
         "git" : ""
     }
     ,

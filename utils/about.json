@@ -3,9 +3,19 @@
         "companyName" : "Boeing India",
         "jobTitle" : "Java Full Stack Developer",
         "tenure" : "Sept 2021 - Present",
-        "description1" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh.",
-        "description2" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh.",
-        "description3" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh.",
+        "description1" : "Working on a web-app for the ISS-NASA team, to help them generate label diagrams.Worked on making reliable back-end services and as well as a user friendly front-end.",
+        "description2" : "Worked on recommendation algorithm for label dash numbers based on user inputs.Worked on creating engineering drawing templates out of the inputs entered by user.Worked on creating engineering drawing templates out of the inputs entered by user.",
+        "description3" : "Tech Stack - Angular, Spring Boot, Node.js, MySQL , PCF",
+        "logo" : ""
+
+    },
+    {
+        "companyName" : "Doodlepie Technologies",
+        "jobTitle" : "Co-Founder",
+        "tenure" : "June 2020 - July 2021",
+        "description1" : "Came up with a idea for a mobile application - Let's play - An online turf booking platform.",
+        "description2" : "Implemented payment gateway using webhooks.Managed concurrent booking requests.Managed concurrent booking requests.Implemented goggle authentication.",
+        "description3" : "Tech stack - Flutter , Node.js , Firebase",
         "logo" : ""
 
     },

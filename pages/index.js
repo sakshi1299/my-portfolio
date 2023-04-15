@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
-import { Path, NavBar, Node, About, CustButton, Work } from '../components';
+import { Path, NavBar, Node, About, CustButton, Work , Blog } from '../components';
 import styles from "../styles/Home.module.css";
 import { Inter, Roboto_Mono } from '@next/font/google'
 import { Container, Button } from '@mui/material';
 import work from "../utils/work.json";
+import blogs from "../utils/blogs.json"
+import Grid from '@mui/material/Grid';
+
 
 const inter = Inter()
 const robotoMono = Roboto_Mono();
@@ -15,6 +18,12 @@ export default function Home() {
 
   function handleChange(value) {
     setCurrProject(value)
+  }
+
+  function handleNavChange(value)
+  {
+    var element = document.getElementById(value);
+    element.scrollIntoView({behavior:"smooth"});
   }
   return (
     // https://sres.web.boeing.com/artifactory/api/npm/npm-releases/
@@ -36,7 +45,7 @@ export default function Home() {
         {/* above nav bar */}
 
         {/* nav bar */}
-        <NavBar />
+        <NavBar handleChange={handleNavChange} />
         {/* nav bar */}
 
         {/* header */}
@@ -53,7 +62,7 @@ export default function Home() {
         </div>
         {/* header */}
 
-        <Button variant="outlined" className={styles.button}> download my resume</Button>
+        <Button variant="outlined" className={styles.button} onClick={(e)=>window.open('../assets/Resume.pdf', '_blank')}> download my resume</Button>
 
         {/* path above about section */}
         <div className={styles.pathAboveNavBar}>
@@ -85,7 +94,7 @@ export default function Home() {
         {/* path above work section */}
 
         {/* Work Section */}
-        <section id="About" className={styles.workSection}>
+        <section id="Work" className={styles.workSection}>
           <div className={styles.buttons}>
             <h3 className={`${styles.sectionHeadingLeft}  ${robotoMono.className} `}>Work</h3>
             {
@@ -98,7 +107,7 @@ export default function Home() {
               <div className={styles.pathAboveNavBar}>
                 <Path direction={"vertical"} height={"100px"} width={"0px"}></Path>
                 <Node border={false} />
-                <Path direction={"vertical"} height={"105px"} width={"0px"}></Path>
+                <Path direction={"vertical"} height={"175px"} width={"0px"}></Path>
               </div>
           </div>
           <Work index={currProject} />
@@ -106,24 +115,64 @@ export default function Home() {
         {/* Work Section */}
 
         {/* Path above blogs section */}
-        <div className={styles.pathBelowWork}>
-          <div className={styles.horizontalFullPath}>
-            <Path  direction={"horizontal"} height={"0px"} width={"30%"}></Path>
-            <Node border={false} />
-            <Path  direction={"horizontal"} height={"0px"} width={"50%"}></Path>
+      
+          <div className={styles.pathBelowWork}>
+            <div className={styles.horizontalFullPath}>
+              <Path  direction={"horizontal"} height={"0px"} width={"30%"}></Path>
+              <Node border={false} />
+              <Path  direction={"horizontal"} height={"0px"} width={"50%"}></Path>
+            </div>
+            <section id="Blog" className={styles.blogsSection}>
+          <Grid container  className={styles.blogs}>
+          {
+              blogs.map((blog, i) => {
+                return (
+                  <Grid item md={6}>
+                      < Blog key={i} blog={blog} />
+                  </Grid> 
+                 
+                )
+              })
+            }
+          </Grid>
+            <div className={styles.vertPathAlignment}>
+              <Path  direction={"vertical"} height={"105px"} width={"0px"}></Path>
+              <Node border={true} />
+              <h3 className={`${styles.sectionHeading}  ${robotoMono.className} `}>Blogs</h3>
+              <Path  direction={"vertical"} height={"215px"} width={"0px"}></Path>
+              <Node border={false} />
+              <Path  direction={"vertical"} height={"395px"} width={"0px"}></Path>
+            </div>
+            </section>
           </div>
-          <div className={styles.vertPathAlignment}>
-            <Path  direction={"vertical"} height={"105px"} width={"0px"}></Path>
-            <Node border={true} />
-            <h3 className={`${styles.sectionHeading}  ${robotoMono.className} `}>Blogs</h3>
-            <Path  direction={"vertical"} height={"215px"} width={"0px"}></Path>
-            <Node border={false} />
-            <Path  direction={"vertical"} height={"215px"} width={"0px"}></Path>
-          </div>
-          
-        </div>
-       
         {/* Path above blogs section */}
+
+        {/* path above contact me */}
+        <div className={styles.horizontalRevPath}>
+              <Path  direction={"horizontal"} height={"0px"} width={"23%"}></Path>
+              <Node border={false} />
+              <Path  direction={"horizontal"} height={"0px"} width={"20%"}></Path>
+        </div>
+        <div className={styles.vertPathAlignment}>
+          <Path  direction={"vertical"} height={"200px"} width={"0px"}></Path>
+          <Node border={true} />
+          <h3 className={`${styles.sectionHeading}  ${robotoMono.className} `}>Contact</h3>
+        </div>
+        {/* path above contact me */}
+
+      </div>
+
+      <section id="Contact"  className={`${styles.header} ${styles.contactSection} ${inter.className}`}>
+        <h2 className={styles.contactSectionHeading}>Get in touch</h2>
+        <p className={styles.contactSectionDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Felis sit sollicitudin fusce diam eu duis nibh. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Felis sit sollicitudin fusce diam eu duis nibh.
+        </p>
+        <Button variant="outlined" className={styles.button}>Say hello!</Button>
+      </section>
+
+      <div className={styles.copyright}>
+          Copyright 2021 | All rights reserved
       </div>
     </Container>
   )

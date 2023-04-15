@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from "../styles/work.module.css";
-import data from "../utils/about.json";
 import { Inter, Roboto_Mono } from '@next/font/google'
 import work from "../utils/work.json"
 const inter = Inter();
@@ -19,7 +18,9 @@ export default function Work(props) {
                     <p className={`${styles.projectDesc} ${inter.className}`}>{work[props.index].description}</p>
                     <p className={`${styles.git} ${robotoMono.className}`}>View Code</p>
                 </div>
-                <div className={styles.projectimage}></div>
+                <div className={styles.projectimage}>
+                    {/* <img src={work[props.index].image}></img> */}
+                </div>
              
             </div>
         </div>

@@ -99,7 +99,16 @@ margin-bottom: 0px;
   align-items: center;
   gap: 6px;
 }
-
+.horizontalRevPath{
+  width: 100%;
+  padding: 0px 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 15%;
+  align-items: center;
+  gap: 6px;
+}
 .horizontalFullPath{
   width: 100%;
   display: flex;
@@ -155,4 +164,51 @@ margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.blogsSection{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.blogs{
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0px;
+  margin: 105px auto;
+}
+.contactSectionHeading{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+}
+.contactSectionDescription{
+  width: 50%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #A9A9A9;
+}
+.contactSection{
+  margin-right: 5%;
+}
+.copyright{
+  margin-top: 200px;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 5%;
+  /* identical to box height */
+  text-align: center;
+  text-transform: capitalize;
+
+color: #FFFFFF;
 }

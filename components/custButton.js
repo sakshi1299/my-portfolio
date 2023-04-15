@@ -7,7 +7,6 @@ const inter = Inter();
 const robotoMono = Roboto_Mono();
 
 export default function CustButton(props) {
-    console.log(props.index === props.currProject)
 return(
     <div 
             onClick={(e)=>props.handleChange(props.index)} 
