@@ -79,7 +79,7 @@
 .companyLogo{
     height: 54px;
     width: 54px;
-    border: 1px solid #6A6A6A;
+    /* border: 1px solid #6A6A6A; */
 }
 .jobTitle{
     font-size: 16px;
@@ -101,5 +101,9 @@
     font-weight: 400;
     margin-top: 8px; 
     text-align: justify;
+}
+.logo{
+    max-width: 100%;
+    max-height: 100%;
 }
 

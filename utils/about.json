@@ -3,14 +3,24 @@
         "companyName" : "Boeing India",
         "jobTitle" : "Java Full Stack Developer",
         "tenure" : "Sept 2021 - Present",
-        "description1" : "Working on a web-app for the ISS-NASA team, to help them generate label diagrams.Worked on making reliable back-end services and as well as a user friendly front-end.",
-        "description2" : "Worked on recommendation algorithm for label dash numbers based on user inputs.Worked on creating engineering drawing templates out of the inputs entered by user.Worked on creating engineering drawing templates out of the inputs entered by user.",
-        "description3" : "Tech Stack - Angular, Spring Boot, Node.js, MySQL , PCF",
-        "logo" : ""
+        "description1" : "The experience involved working on a web-app for the ISS-NASA team, with the aim of helping them generate label diagrams. The work was focused on developing both reliable back-end services and a user-friendly front-end. One of the key achievements was the implementation of a recommendation algorithm for label dash numbers based on user inputs. Additionally, the team worked on creating engineering drawing templates out of the inputs entered by the user",
+        "description2" : "Security was a crucial aspect of the project, and the team used Coverity to address any issues that arose. There was also extensive consultation with engineering team members to determine system loads and develop improvement plans. Regular discussions with customers were held to collect feedback at different stages of the project and directly address any concerns that arose.",
+        "description3" : "The tech stack used included Angular, Spring Boot, Node.js, MySQL, and PCF. Throughout the project, the team analyzed existing software implementations to identify areas requiring improvement. This enabled them to create a high-quality solution that met the needs of the ISS-NASA team. Overall, the experience involved working on a complex project that required a wide range of technical skills, as well as effective communication and collaboration with stakeholders.",
+        "logo" : "../assets/boeing.png"
 
     },
     {
-        "companyName" : "Doodlepie Technologies",
+        "companyName" : "Tyke",
+        "jobTitle" : "Full Stack Developer(Freelance)",
+        "tenure" : "Dec 2020 - Apr 2021",
+        "description1" : "I had an incredible experience working as a freelancer on a project for Tyke, a startup investment platform. I completely owned the product development process, which allowed me to work independently and creatively to deliver performance-driven and user-centric websites that met all business requirements. I enjoyed having the freedom to work on exciting features such as bank account verification, official document verification, and E-sign for KYC using Digio. These features required the integration of various third-party services, including Google Analytics, Segment, Payment Gateway, Twilio, and Sendgrid. I also implemented Google and Facebook authentication to ensure the security and privacy of the users.",
+        "description2" : "One of the most exciting aspects of this project was the tech stack that I got to work with, including React.js, Node.js, MongoDB, and AWS EC2. I found that these technologies allowed me to build dynamic, responsive, and scalable websites that met all business needs. I enjoyed the challenge of working with a modern tech stack and found it to be a rewarding experience. It was especially satisfying to see my work come to life and deliver a top-notch user experience that exceeded client expectations.",
+        "description3" : "Overall, this project was a great opportunity to work on a cutting-edge startup and take ownership of the entire product development process. The freedom to work independently and creatively, the exciting features, and the modern tech stack made this project a rewarding and fulfilling experience. I am grateful for this opportunity, and I look forward to taking on similar projects in the future.",
+        "logo" : "../assets/tyke.png"
+
+    },
+    {
+        "companyName" : "Let's Play",
         "jobTitle" : "Co-Founder",
         "tenure" : "June 2020 - July 2021",
         "description1" : "Came up with a idea for a mobile application - Let's play - An online turf booking platform.",

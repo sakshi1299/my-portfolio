@@ -36,6 +36,7 @@ export default function About() {
                 </div>
                 <div className={styles.contentDesc}>
                     <div className={styles.companyLogo}>
+                        <img className={styles.logo} src={data[company].logo}></img>
                     </div>
                     <h3 className={`${styles.jobTitle} ${inter.className}`}>
                         {data[company].jobTitle} at {data[company].companyName}

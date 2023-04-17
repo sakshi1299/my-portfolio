@@ -54,10 +54,10 @@ export default function Home() {
           <p className={styles.jobTitle}>Full Stack Developer @Boeing</p>
 
           <p className={styles.aboutMe}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Felis sit sollicitudin fusce diam eu duis nibh.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Felis sit sollicitudin fusce diam eu duis nibh.
+            Experienced Full Stack Developer with a passion for crafting dynamic web applications. 
+            Passionate about solving complex problems and creating 
+            impactful solutions that simplify people's lives.
+
           </p>
         </div>
         {/* header */}
