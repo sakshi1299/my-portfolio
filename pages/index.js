@@ -127,8 +127,8 @@ export default function Home() {
           {
               blogs.map((blog, i) => {
                 return (
-                  <Grid item md={6}>
-                      < Blog key={i} blog={blog} />
+                  <Grid key={i} item md={6}>
+                      < Blog  blog={blog} />
                   </Grid> 
                  
                 )
