@@ -56,8 +56,7 @@ export default function Home() {
           <p className={styles.aboutMe}>
             Experienced Full Stack Developer with a passion for crafting dynamic web applications. 
             Passionate about solving complex problems and creating 
-            impactful solutions that simplify people's lives.
-
+            impactful solutions that simplify people&apos;s lives.
           </p>
         </div>
         {/* header */}
