@@ -176,11 +176,11 @@ margin-bottom: 0px;
 }
 
 .blogs{
-  width: 60%;
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 0px;
-  margin: 105px auto;
+  width: 60% !important;
+  display: grid !important;
+  grid-template-columns: auto auto !important;
+  gap: 0px !important;
+  margin: 105px auto !important;
 }
 .contactSectionHeading{
   font-weight: 700;
