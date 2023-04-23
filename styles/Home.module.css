@@ -11,7 +11,9 @@
   justify-content: center;
   flex-direction: column;
 }
-
+.buttonsContainer{
+  grid-gap: 12px;
+}
 .modeSwitch{
   margin: 10px 0px;
   height: 30px;
@@ -140,6 +142,7 @@ margin-bottom: 0px;
   letter-spacing: 1.2px;
   text-align: center;
 }
+
 .workContent{
   display: flex;
   flex-direction: row;
@@ -212,3 +215,75 @@ margin-bottom: 0px;
 
 color: #FFFFFF;
 }
+.respPath{
+  display: none
+}
+.contactHead{
+  display: none;
+}
+/* mobile responsive */
+@media only screen and (max-width: 900px) {
+  .respPath{
+    display: block;
+  }
+  .pathAboveNavBar, .path, .pathBelowAbout, .pathBelowWork, .horizontalRevPath, .vertPathAlignment{
+    display: none;
+  }
+
+  .name{
+    font-size: 43px;
+    text-align: center;
+    letter-spacing: normal;
+    margin-top: 50px;
+  }
+  .jobTitle{
+    text-align: center;
+    font-size: 16px;
+  }
+  .aboutMe{
+    width: 100%;
+  }
+  .aboutSection{
+    width: 100%;
+    /* margin-top: 80px; */
+  }
+  .buttons{
+    width: 100%;
+  }
+  .workSection{
+    /* margin-top: 20%; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .buttonsContainer{
+    grid-gap: 16px;
+    display: grid;
+      grid-template-columns: 50% 50%;
+      /* column-gap: 2px; */
+  }
+  .buttonItem{
+    max-width: 100% !important;
+}
+.contactHead{
+  display: block;
+  color: #9B74FB;
+  font-size: 16px;
+  /* margin:  16px 0px 20px 0px;; */
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.contactSectionHeading{
+  font-size: 32px;
+}
+.contactSectionDescription{
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+ 
+}
+} 
+

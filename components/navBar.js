@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from '../styles/navBar.module.css';
 import { Roboto_Mono } from '@next/font/google';
-
+import {GiHamburgerMenu} from 'react-icons/gi'
 const robotoMono = Roboto_Mono();
 export default function navBar(props){
     const tabs = [
         {
-            "name" : "About",
-            "section" : "#About"
+            "name" : "Experience",
+            "section" : "#Experience"
         },
         {
             "name" : "Work",
@@ -23,6 +23,7 @@ export default function navBar(props){
         }
     ]
     return(
+        <>
         <div className={styles.navBar}>
             {
                 tabs.map((item , index)=>{
@@ -33,5 +34,10 @@ export default function navBar(props){
                 })
             }
         </div>
+        <div className={styles.respNavBar}>
+            <div></div>
+                <GiHamburgerMenu className={styles.hamburgerMenu}/>
+        </div>
+        </>
     )
 }

@@ -5,7 +5,9 @@
     justify-content: center;
     color: white;
 }
-
+.respNavBar{
+    display: none;
+}
 .navItems{
     padding: 0px 27px;
     color: #A9A9A9;
@@ -15,3 +17,20 @@
     text-transform: uppercase;
 }
 
+/* responsive  */
+@media only screen and (max-width: 900px) {
+    .navBar{
+        display: none;
+    }
+    .respNavBar{
+        margin-top: 14%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .hamburgerMenu{
+        color: white;
+        font-size: 24px;
+    }
+} 

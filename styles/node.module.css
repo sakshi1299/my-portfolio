@@ -10,10 +10,16 @@
 .nodeBorder{
     height: 8px;
     width: 8px;
-    border-radius: 50%;
+    border-radius: 50% !important;
     background-color: #8B8B8B;
     margin: 9px 0px 4px 0px;
     display: block;
-    outline-offset: 3px;
+    outline-offset: 3px !important;
     outline: 2px solid #C4C4C4;
+}
+
+@media only screen and (max-width: 900px) {
+    .node , .nodeBorder{
+        margin-left: -2px;
+    }
 }

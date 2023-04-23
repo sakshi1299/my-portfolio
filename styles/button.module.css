@@ -21,3 +21,13 @@
     background: linear-gradient(to right, #A176F0, #F58E62);
     color: white;
 }
+@media only screen and (max-width: 768px) {
+    .button{
+        padding: 17px auto;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
