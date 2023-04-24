@@ -259,7 +259,7 @@ color: #FFFFFF;
   }
   .buttonsContainer{
     grid-gap: 16px;
-    display: grid;
+    display: grid !important;
       grid-template-columns: 50% 50%;
       /* column-gap: 2px; */
   }
